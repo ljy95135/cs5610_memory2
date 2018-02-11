@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col">
+    <h1 id="index-page">Join a Game</h1>
+    <p><a href="/game/demo">Join Demo</a></p>
+	<p><input type="text" id="game-input"></p>
+	<p><button id="game-button">Join your game!</button></p>
+  </div>
+</div>
+
