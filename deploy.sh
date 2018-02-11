@@ -2,7 +2,7 @@
 
 export PORT=5104
 export MIX_ENV=prod
-export GIT_PATH=/home/memory2/src/memory2
+export GIT_PATH=/home/memory/src/memory2
 
 PWD=`pwd`
 if [ $PWD != $GIT_PATH ]; then
@@ -11,7 +11,7 @@ if [ $PWD != $GIT_PATH ]; then
 	exit 1
 fi
 
-if [ $USER != "memory2" ]; then
+if [ $USER != "memory" ]; then
 	echo "Error: must run as user 'memory2'"
 	echo "  Current user is $USER"
 	exit 2
@@ -37,7 +37,7 @@ REL_TAR=~/src/memory2/_build/prod/rel/memory2/releases/0.0.1/memory2.tar.gz
 (cd ~/www/memory2 && tar xzvf $REL_TAR)
 
 crontab - <<CRONTAB
-@reboot bash /home/memory2/src/memory2/start.sh
+@reboot bash /home/memory/src/memory2/start.sh
 CRONTAB
 
 #. start.sh
