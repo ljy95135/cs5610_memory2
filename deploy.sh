@@ -33,7 +33,7 @@ if [ -d ~/www/memory2 ]; then
 fi
 
 mkdir -p ~/www/memory2
-REL_TAR=~/src/memory2/_build/prod/rel/memory2/releases/0.0.1/memory2.tar.gz
+REL_TAR=~/src/memory2/_build/prod/rel/memory/releases/0.0.1/memory.tar.gz
 (cd ~/www/memory2 && tar xzvf $REL_TAR)
 
 crontab - <<CRONTAB
