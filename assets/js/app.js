@@ -34,4 +34,11 @@ function start() {
   }
 }
 
+function form_init() {
+  $('#game-button').click(() => {
+  let xx = $('#game-input').val();
+  window.location = "/game/" + xx;
+  });
+}
+
 $(start);

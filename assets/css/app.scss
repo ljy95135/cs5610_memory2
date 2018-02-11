@@ -1,6 +1,27 @@
 /* This file is for your main application css. */
-
 @import "bootstrap";
 
-body { font-size: 20pt; }
+h1 {
+  text-align: center;
+}
 
+.answered {
+  height: 140px;
+  line-height: 140px;
+  border: 1px solid red;
+  text-align: center;
+
+  background-color: blue;
+}
+
+.notAnswered {
+  font-size: 28px;
+  height: 140px;
+  line-height: 140px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+.rightBtn {
+  float: right;
+}
